@@ -24,14 +24,30 @@ limitations under the License.
 
 > Round a numeric value to the nearest multiple of b^n toward positive infinity.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-ceilb
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ceilb from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilb@esm/index.mjs';
+var ceilb = require( '@stdlib/math-base-special-ceilb' );
 ```
 
 #### ceilb( x, n, b )
@@ -81,16 +97,11 @@ v = ceilb( 5.0, 1, 2 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
-import ceilb from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilb@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var pow = require( '@stdlib/math-base-special-pow' );
+var ceilb = require( '@stdlib/math-base-special-ceilb' );
 
 var x;
 var n;
@@ -105,10 +116,6 @@ for ( i = 0; i < 100; i++ ) {
     v = ceilb( x, n, b );
     console.log( 'x: %d. %d^%d: %d. Rounded: %d.', x, b, n, pow( b, n ), v );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -123,10 +130,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward positive infinity.</span>
--   <span class="package-name">[`@stdlib/math/base/special/ceiln`][@stdlib/math/base/special/ceiln]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward positive infinity.</span>
--   <span class="package-name">[`@stdlib/math/base/special/floorb`][@stdlib/math/base/special/floorb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward negative infinity.</span>
--   <span class="package-name">[`@stdlib/math/base/special/roundb`][@stdlib/math/base/special/roundb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n on a linear scale.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/ceil`][@stdlib/math/base/special/ceil]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/ceiln`][@stdlib/math/base/special/ceiln]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/floorb`][@stdlib/math/base/special/floorb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/roundb`][@stdlib/math/base/special/roundb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n on a linear scale.</span>
 
 </section>
 
@@ -141,7 +148,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -205,13 +212,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/ceil]: https://github.com/stdlib-js/math-base-special-ceil/tree/esm
+[@stdlib/math/base/special/ceil]: https://github.com/stdlib-js/math-base-special-ceil
 
-[@stdlib/math/base/special/ceiln]: https://github.com/stdlib-js/math-base-special-ceiln/tree/esm
+[@stdlib/math/base/special/ceiln]: https://github.com/stdlib-js/math-base-special-ceiln
 
-[@stdlib/math/base/special/floorb]: https://github.com/stdlib-js/math-base-special-floorb/tree/esm
+[@stdlib/math/base/special/floorb]: https://github.com/stdlib-js/math-base-special-floorb
 
-[@stdlib/math/base/special/roundb]: https://github.com/stdlib-js/math-base-special-roundb/tree/esm
+[@stdlib/math/base/special/roundb]: https://github.com/stdlib-js/math-base-special-roundb
 
 <!-- </related-links> -->
 
