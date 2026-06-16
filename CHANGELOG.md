@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-09)
+## Unreleased (2026-06-16)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`9451158`](https://github.com/stdlib-js/stdlib/commit/94511586863c9641274417bb60f8e9fe38e56166) - **test:** migrate `math/base/special/ceilb` to ULP-based testing [(#12781)](https://github.com/stdlib-js/stdlib/pull/12781) _(by Philipp Burckhardt)_
 -   [`f797ee0`](https://github.com/stdlib-js/stdlib/commit/f797ee08c2803353aba4a15f22b866327488dd9b) - **chore:** fix JavaScript lint errors [(#12134)](https://github.com/stdlib-js/stdlib/pull/12134) _(by Syed Ishmum Ahnaf)_
 -   [`c73c8b3`](https://github.com/stdlib-js/stdlib/commit/c73c8b39bd76529182ea2b3423c6f0feab434774) - **bench:** refactor to use string interpolation in `math/base/special` [(#11387)](https://github.com/stdlib-js/stdlib/pull/11387) _(by Karan Anand)_
 
@@ -37,9 +38,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Karan Anand
+-   Philipp Burckhardt
 -   Syed Ishmum Ahnaf
 
 </section>
